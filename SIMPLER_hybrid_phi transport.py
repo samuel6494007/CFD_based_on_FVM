@@ -149,7 +149,7 @@ def deltaFu(J, I):
     return Fu_e(J, I) - Fu_w(J, I) + Fu_n(J, I) - Fu_s(J, I)
 
 def Fv_w(J, I):
-    return ((rho(J, I) + rho(J, I - 1))/2*u0[J, I - 1] + (rho(J + 1, I) + rho(J + 1, I - 1))/2*u0[J + 1, I - 1])
+    return ((rho(J, I) + rho(J, I - 1))/2*u0[J, I - 1] + (rho(J + 1, I) + rho(J + 1, I - 1))/2*u0[J + 1, I - 1])/2
 
 def Fv_e(J, I):
     return ((rho(J, I) + rho(J, I + 1))/2*u0[J, I] + (rho(J + 1, I) + rho(J + 1, I + 1))/2*u0[J + 1, I])/2
